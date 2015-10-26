@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "YJHColorPickerHSWheel.h"
 
 @interface ViewController ()
+
+@property (nonatomic, weak) YJHColorPickerHSWheel *colorWheel;
 
 @end
 
@@ -16,12 +19,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self p_SetUpWheel];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+/**
+ *  初始化圆形取色板
+ */
+- (void) p_SetUpWheel{
+    
+    YJHColorPickerHSWheel *wheel = [[YJHColorPickerHSWheel alloc] initWithFrame:CGRectMake(40, 15, 240, 240)];
+    
+    [wheel addTarget:self action:@selector(colorWheelColorChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:wheel];
+    self.colorWheel = wheel;
 }
+
+- (void) colorWheelColorChanged:(YJHColorPickerHSWheel *)wheel {
+    // 根据取到的颜色设施背景颜色
+    self.view.backgroundColor = self.colorWheel.currentColor;
+    
+}
+
 
 @end

@@ -15,6 +15,9 @@
 		7DA60BBA1BDDB85800BC5FD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DA60BB81BDDB85800BC5FD0 /* LaunchScreen.storyboard */; };
 		7DA60BC51BDDB85800BC5FD0 /* ColorPickDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BC41BDDB85800BC5FD0 /* ColorPickDemoTests.m */; };
 		7DA60BD01BDDB85800BC5FD0 /* ColorPickDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BCF1BDDB85800BC5FD0 /* ColorPickDemoUITests.m */; };
+		7DA60BDF1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */; };
+		7DA60BE21BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */; };
+		7DA60BE51BDDC19600BC5FD0 /* HSV.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BE31BDDC19600BC5FD0 /* HSV.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		7DA60BCB1BDDB85800BC5FD0 /* ColorPickDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPickDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA60BCF1BDDB85800BC5FD0 /* ColorPickDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorPickDemoUITests.m; sourceTree = "<group>"; };
 		7DA60BD11BDDB85800BC5FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DA60BDD1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHColorPickerHSWheel.h; sourceTree = "<group>"; };
+		7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHColorPickerHSWheel.m; sourceTree = "<group>"; };
+		7DA60BE01BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ColorAtPixel.h"; sourceTree = "<group>"; };
+		7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
+		7DA60BE31BDDC19600BC5FD0 /* HSV.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HSV.c; sourceTree = "<group>"; };
+		7DA60BE41BDDC19600BC5FD0 /* HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSV.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +112,14 @@
 			children = (
 				7DA60BAD1BDDB85800BC5FD0 /* AppDelegate.h */,
 				7DA60BAE1BDDB85800BC5FD0 /* AppDelegate.m */,
+				7DA60BE41BDDC19600BC5FD0 /* HSV.h */,
+				7DA60BE31BDDC19600BC5FD0 /* HSV.c */,
 				7DA60BB01BDDB85800BC5FD0 /* ViewController.h */,
 				7DA60BB11BDDB85800BC5FD0 /* ViewController.m */,
+				7DA60BDD1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.h */,
+				7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */,
+				7DA60BE01BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.h */,
+				7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */,
 				7DA60BB31BDDB85800BC5FD0 /* Main.storyboard */,
 				7DA60BB61BDDB85800BC5FD0 /* Assets.xcassets */,
 				7DA60BB81BDDB85800BC5FD0 /* LaunchScreen.storyboard */,
@@ -202,6 +217,7 @@
 		7DA60B9F1BDDB85800BC5FD0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YJH;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = pikeYoung;
 				TargetAttributes = {
@@ -270,8 +286,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DA60BE21BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m in Sources */,
 				7DA60BB21BDDB85800BC5FD0 /* ViewController.m in Sources */,
 				7DA60BAF1BDDB85800BC5FD0 /* AppDelegate.m in Sources */,
+				7DA60BE51BDDC19600BC5FD0 /* HSV.c in Sources */,
+				7DA60BDF1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m in Sources */,
 				7DA60BAC1BDDB85800BC5FD0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
