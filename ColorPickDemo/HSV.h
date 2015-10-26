@@ -23,3 +23,6 @@ HSVType HSVTypeMake(float h, float s, float v);
 
 HSVType RGB_to_HSV( RGBType RGB );
 RGBType HSV_to_RGB( HSVType HSV );
+
+// RGB转成十六进制数，例如:0xfff6f9
+int RGB_to_HEX(int r,int g,int b);

@@ -9,6 +9,7 @@
 #import "YJHColorPickerHSWheel.h"
 #import "UIImage+ColorAtPixel.h"
 #import "HSV.h"
+#import "UIColor+Convert.h"
 
 @interface YJHColorPickerHSWheel()
 
@@ -104,10 +105,13 @@
  *  @param mousepoint 当前点
  */
 - (void) p_getCurrentColorWithPoint:(CGPoint) mousepoint {
-    self.currentColor = [self.wheelImageView.image colorAtPixel:mousepoint];
-    NSLog(@"%@", self.currentColor);
+    RGBType rgba = [self.wheelImageView.image colorAtPixel:mousepoint];
+    NSInteger hex = RGB_to_HEX(rgba.r, rgba.g, rgba.b);
+    NSLog(@"r-%f,g-%f,b-%f", rgba.r, rgba.g, rgba.b);
+    NSString *hexString = [NSString stringWithFormat:@"0x%06lx", (long)hex];
+    NSLog(@"%@", hexString);
+    self.currentColor = [UIColor colorWithHexString:hexString alpha:1];
 }
-
 
 
 #pragma mark - Touches

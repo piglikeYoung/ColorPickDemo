@@ -18,6 +18,7 @@
 		7DA60BDF1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */; };
 		7DA60BE21BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */; };
 		7DA60BE51BDDC19600BC5FD0 /* HSV.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BE31BDDC19600BC5FD0 /* HSV.c */; };
+		7DA60BE81BDE01CF00BC5FD0 /* UIColor+Convert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BE71BDE01CF00BC5FD0 /* UIColor+Convert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorAtPixel.m"; sourceTree = "<group>"; };
 		7DA60BE31BDDC19600BC5FD0 /* HSV.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HSV.c; sourceTree = "<group>"; };
 		7DA60BE41BDDC19600BC5FD0 /* HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSV.h; sourceTree = "<group>"; };
+		7DA60BE61BDE01CF00BC5FD0 /* UIColor+Convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Convert.h"; sourceTree = "<group>"; };
+		7DA60BE71BDE01CF00BC5FD0 /* UIColor+Convert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Convert.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */,
 				7DA60BE01BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.h */,
 				7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */,
+				7DA60BE61BDE01CF00BC5FD0 /* UIColor+Convert.h */,
+				7DA60BE71BDE01CF00BC5FD0 /* UIColor+Convert.m */,
 				7DA60BB31BDDB85800BC5FD0 /* Main.storyboard */,
 				7DA60BB61BDDB85800BC5FD0 /* Assets.xcassets */,
 				7DA60BB81BDDB85800BC5FD0 /* LaunchScreen.storyboard */,
@@ -289,6 +294,7 @@
 				7DA60BE21BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m in Sources */,
 				7DA60BB21BDDB85800BC5FD0 /* ViewController.m in Sources */,
 				7DA60BAF1BDDB85800BC5FD0 /* AppDelegate.m in Sources */,
+				7DA60BE81BDE01CF00BC5FD0 /* UIColor+Convert.m in Sources */,
 				7DA60BE51BDDC19600BC5FD0 /* HSV.c in Sources */,
 				7DA60BDF1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m in Sources */,
 				7DA60BAC1BDDB85800BC5FD0 /* main.m in Sources */,
@@ -517,6 +523,7 @@
 				7DA60BD61BDDB85800BC5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA60BD71BDDB85800BC5FD0 /* Build configuration list for PBXNativeTarget "ColorPickDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				7DA60BD91BDDB85800BC5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA60BDA1BDDB85800BC5FD0 /* Build configuration list for PBXNativeTarget "ColorPickDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +541,7 @@
 				7DA60BDC1BDDB85800BC5FD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

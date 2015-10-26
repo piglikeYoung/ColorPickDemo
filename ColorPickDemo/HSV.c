@@ -71,3 +71,8 @@ RGBType HSV_to_RGB( HSVType HSV )
 	}
     return RGBTypeMake(0, 0, 0);
 }
+
+int RGB_to_HEX(int r,int g,int b)
+{
+    return r << 16 | g << 8 | b;
+}

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HSV.h"
 
 @interface UIImage (ColorAtPixel)
 
@@ -15,8 +16,8 @@
  *
  *  @param point 当前点
  *
- *  @return 颜色
+ *  @return 颜色RGB
  */
-- (UIColor *)colorAtPixel:(CGPoint)point;
+- (RGBType)colorAtPixel:(CGPoint)point;
 
 @end

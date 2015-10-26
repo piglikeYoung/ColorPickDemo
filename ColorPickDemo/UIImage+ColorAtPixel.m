@@ -10,10 +10,12 @@
 
 @implementation UIImage (ColorAtPixel)
 
-- (UIColor *)colorAtPixel:(CGPoint)point {
+- (RGBType)colorAtPixel:(CGPoint)point {
+    RGBType rgba = {0,0,0};
+    
     // Cancel if point is outside image coordinates
     if (!CGRectContainsPoint(CGRectMake(0.0f, 0.0f, self.size.width, self.size.height), point)) {
-        return nil;
+        return rgba;
     }
     
     
@@ -45,11 +47,16 @@
     CGContextRelease(context);
     
     // Convert color values [0..255] to floats [0.0..1.0]
-    CGFloat red   = (CGFloat)pixelData[0] / 255.0f;
-    CGFloat green = (CGFloat)pixelData[1] / 255.0f;
-    CGFloat blue  = (CGFloat)pixelData[2] / 255.0f;
-    CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
-    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
+//    CGFloat red   = (CGFloat)pixelData[0] / 255.0f;
+//    CGFloat green = (CGFloat)pixelData[1] / 255.0f;
+//    CGFloat blue  = (CGFloat)pixelData[2] / 255.0f;
+//    CGFloat alpha = (CGFloat)pixelData[3] / 255.0f;
+    rgba.r = (CGFloat)pixelData[0];
+    rgba.g = (CGFloat)pixelData[1];
+    rgba.b = (CGFloat)pixelData[2];
+    return rgba;
+//    return [UIColor colorWithRed:red green:green blue:blue alpha:alpha];
 }
+
 
 @end
