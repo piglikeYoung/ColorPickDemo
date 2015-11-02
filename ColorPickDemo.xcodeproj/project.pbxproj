@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D0F1BE01BE73CF400851966 /* YJHColorPickerHSWheel2.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D0F1BDF1BE73CF400851966 /* YJHColorPickerHSWheel2.m */; };
 		7DA60BAC1BDDB85800BC5FD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BAB1BDDB85800BC5FD0 /* main.m */; };
 		7DA60BAF1BDDB85800BC5FD0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BAE1BDDB85800BC5FD0 /* AppDelegate.m */; };
 		7DA60BB21BDDB85800BC5FD0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA60BB11BDDB85800BC5FD0 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D0F1BDE1BE73CF400851966 /* YJHColorPickerHSWheel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJHColorPickerHSWheel2.h; sourceTree = "<group>"; };
+		7D0F1BDF1BE73CF400851966 /* YJHColorPickerHSWheel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJHColorPickerHSWheel2.m; sourceTree = "<group>"; };
 		7DA60BA71BDDB85800BC5FD0 /* ColorPickDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPickDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA60BAB1BDDB85800BC5FD0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7DA60BAD1BDDB85800BC5FD0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,6 +124,8 @@
 				7DA60BB11BDDB85800BC5FD0 /* ViewController.m */,
 				7DA60BDD1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.h */,
 				7DA60BDE1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m */,
+				7D0F1BDE1BE73CF400851966 /* YJHColorPickerHSWheel2.h */,
+				7D0F1BDF1BE73CF400851966 /* YJHColorPickerHSWheel2.m */,
 				7DA60BE01BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.h */,
 				7DA60BE11BDDBC8800BC5FD0 /* UIImage+ColorAtPixel.m */,
 				7DA60BE61BDE01CF00BC5FD0 /* UIColor+Convert.h */,
@@ -296,6 +301,7 @@
 				7DA60BAF1BDDB85800BC5FD0 /* AppDelegate.m in Sources */,
 				7DA60BE81BDE01CF00BC5FD0 /* UIColor+Convert.m in Sources */,
 				7DA60BE51BDDC19600BC5FD0 /* HSV.c in Sources */,
+				7D0F1BE01BE73CF400851966 /* YJHColorPickerHSWheel2.m in Sources */,
 				7DA60BDF1BDDB8D700BC5FD0 /* YJHColorPickerHSWheel.m in Sources */,
 				7DA60BAC1BDDB85800BC5FD0 /* main.m in Sources */,
 			);

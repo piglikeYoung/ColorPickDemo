@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "YJHColorPickerHSWheel.h"
+#import "YJHColorPickerHSWheel2.h"
 
 @interface ViewController ()
 
 @property (nonatomic, weak) YJHColorPickerHSWheel *colorWheel;
+@property (nonatomic, weak) YJHColorPickerHSWheel2 *colorWheel2;
 
 @end
 
@@ -29,11 +31,18 @@
  */
 - (void) p_SetUpWheel{
     // 方法一：使用UIControl的beginTrackingWithTouch，continueTrackingWithTouch和endTrackingWithTouch来获取颜色
-    YJHColorPickerHSWheel *wheel = [[YJHColorPickerHSWheel alloc] initWithFrame:CGRectMake(40, 15, 240, 240)];
+//    YJHColorPickerHSWheel *wheel = [[YJHColorPickerHSWheel alloc] initWithFrame:CGRectMake(40, 15, 240, 240)];
+//    [wheel addTarget:self action:@selector(colorWheelColorChanged:) forControlEvents:UIControlEventValueChanged];
+//    self.colorWheel = wheel;
     
-    [wheel addTarget:self action:@selector(colorWheelColorChanged:) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:wheel];
-    self.colorWheel = wheel;
+    // 方法二：使用拖拽手势和敲击手势来做移动获取颜色
+    YJHColorPickerHSWheel2 *wheel2 = [[YJHColorPickerHSWheel2 alloc] initWithFrame:CGRectMake(40, 15, 240, 240)];
+    self.colorWheel2 = wheel2;
+    wheel2.confirmBlock = ^(UIColor *color) {
+        self.view.backgroundColor = color;
+    };
+    [self.view addSubview:wheel2];
+    
 }
 
 - (void) colorWheelColorChanged:(YJHColorPickerHSWheel *)wheel {
