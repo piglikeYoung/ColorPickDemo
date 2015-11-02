@@ -4,7 +4,7 @@
 //
 //  Created by piglikeyoung on 15/10/26.
 //  Copyright © 2015年 pikeYoung. All rights reserved.
-//
+//  方法一：使用UIControl的beginTrackingWithTouch，continueTrackingWithTouch和endTrackingWithTouch来获取颜色
 
 #import "YJHColorPickerHSWheel.h"
 #import "UIImage+ColorAtPixel.h"
@@ -27,7 +27,8 @@
     if (self = [super initWithFrame:frame]) {
         
         // 初始化取色板图片
-        UIImageView *wheel = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pickerColorWheel.png"]];
+//        UIImageView *wheel = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pickerColorWheel.png"]];
+        UIImageView *wheel = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"color.png"]];
         wheel.contentMode = UIViewContentModeTopLeft;
         wheel.frame = CGRectMake(0, 0, frame.size.width, frame.size.height);
         [self addSubview:wheel];
@@ -39,6 +40,7 @@
         
         self.userInteractionEnabled = YES;
         self.currentHSV = HSVTypeMake(0, 0, 1);
+        
     }
     
     return self;
@@ -105,7 +107,7 @@
  *  @param mousepoint 当前点
  */
 - (void) p_getCurrentColorWithPoint:(CGPoint) mousepoint {
-    RGBType rgba = [self.wheelImageView.image colorAtPixel:mousepoint];
+    RGBType rgba = [self.wheelImageView.image colorAtPixel2:mousepoint];
     NSInteger hex = RGB_to_HEX(rgba.r, rgba.g, rgba.b);
     NSLog(@"r-%f,g-%f,b-%f", rgba.r, rgba.g, rgba.b);
     NSString *hexString = [NSString stringWithFormat:@"0x%06lx", (long)hex];

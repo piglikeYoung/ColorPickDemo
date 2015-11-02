@@ -10,6 +10,14 @@
 
 @interface UIColor (Convert)
 
-+ (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+/**
+ *  根据十六进制字符串转换为UIColor
+ *
+ *  @param hex 十六进制字符串
+ *  @param alpha 透明度
+ *
+ *  @return 颜色
+ */
++ (UIColor *)colorWithHexString:(NSString *)hex alpha:(CGFloat)alpha;
 
 @end

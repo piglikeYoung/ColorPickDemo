@@ -28,7 +28,7 @@
  *  初始化圆形取色板
  */
 - (void) p_SetUpWheel{
-    
+    // 方法一：使用UIControl的beginTrackingWithTouch，continueTrackingWithTouch和endTrackingWithTouch来获取颜色
     YJHColorPickerHSWheel *wheel = [[YJHColorPickerHSWheel alloc] initWithFrame:CGRectMake(40, 15, 240, 240)];
     
     [wheel addTarget:self action:@selector(colorWheelColorChanged:) forControlEvents:UIControlEventValueChanged];
